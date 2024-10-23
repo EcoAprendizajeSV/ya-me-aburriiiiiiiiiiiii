@@ -126,7 +126,6 @@ header {
 }
 
 /*fin de nav*/
-
 .hero {
     position: relative;
     background-image: url('baner/areas.jpg'); 
@@ -154,13 +153,35 @@ header {
 }
 
 .hero-text h2 {
-    font-size: 48px;
+    font-size: 48px; /* Default font size */
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
     padding: 0 20px;
     border-bottom: 5px solid #f8b400;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px; /* Reduce height on smaller screens */
+    }
+    .hero-text h2 {
+        font-size: 36px; /* Decrease font size */
+        padding: 0 10px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 250px; /* Further reduce height for mobile */
+    }
+    .hero-text h2 {
+        font-size: 28px; /* Further decrease font size */
+        padding: 0 5px; /* Further reduce padding */
+    }
+}
+
 
 .areas-extracurriculares {
     display: flex;
